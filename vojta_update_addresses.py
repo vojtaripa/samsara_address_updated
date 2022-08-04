@@ -30,12 +30,11 @@ df_data = pd.DataFrame(df)
 
 
 #LINK TO PAGE: https://developers.samsara.com/reference/updateaddress
-#API TOKENS:
-#VOJTA: samsara_api_6s9rg5cB1aaE7dayJwf3kfwUW2yKJG 
-#SCOTT: samsara_api_XLgAySSTLdVum9jSlvLZ70YPbfXGFa
-#vojta new: samsara_api_fgRT1CiQfxXtLnmdFYEXJujbGGRvRV
+
 
 '''
+--- TEST EXAMPLE - PLEASE IGNOOR ---
+
 3 test addresses:
 
 #array of addresses
@@ -114,7 +113,7 @@ def modify_address(id,Address,	Name,	Latitude,	Longitude,	Radius,	Tags,	Notes,	T
   headers = {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer samsara_api_fgRT1CiQfxXtLnmdFYEXJujbGGRvRV"
+        "Authorization": "<INSERT API TOKEN HERE>"
     }
 
   response = requests.patch(url, json=payload, headers=headers)
